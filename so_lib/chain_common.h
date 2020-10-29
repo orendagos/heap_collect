@@ -2,6 +2,7 @@
 #define __CHAIN_COMMON_H__
 
 #include <stdlib.h>
+#include "log_msg.h"
 
 #define __WEAK __attribute__((weak))
 typedef struct single_chain_node chain_node;
@@ -12,7 +13,7 @@ typedef struct node_info{
 	int count;
 	void* data;//pointer
 	int line_num;// for match
-	unsigned int pointer; // for match
+	unsigned long pointer; // for match
 	int unused;
 	int unused1;
 }node_info_t;
